@@ -6,7 +6,7 @@ import io.restassured.http.ContentType;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class addRequest {
+public class addPlace {
 	
 	@Test
 	public void RequestAdd(){
@@ -15,7 +15,7 @@ public class addRequest {
 		
 		given().
 		
-		queryParam("key","AIzaSyASwmtPUPp7LIHNMCgPduYK_lcTDpAO0cQ").
+		queryParam("key","** Google key here **").
 		body("{"+
   "\"location\": {"+
     "\"lat\": -33.8669710,"+

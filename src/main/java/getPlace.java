@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
 
-public class basics {
+public class getPlace {
 	
 	@Test
 	public void Rest(){
@@ -18,7 +18,7 @@ public class basics {
 		       given().
 						param("location","-33.8670522,151.1957362").
 						param("radius","500").
-						param("key","AIzaSyASwmtPUPp7LIHNMCgPduYK_lcTDpAO0cQ").
+						param("key","** Google key here **").
 				when().
 						get("/maps/api/place/nearbysearch/json").
 				then().

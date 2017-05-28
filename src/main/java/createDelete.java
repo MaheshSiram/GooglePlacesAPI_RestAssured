@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 
 import org.testng.annotations.Test;
 
-public class basics2 {
+public class createDelete {
 
 	@Test
 	public void createAndDelete() {
@@ -30,7 +30,7 @@ public class basics2 {
 		Response res = given().
 
 		//Task-1 = Grab the response
-				queryParam("key", "AIzaSyASwmtPUPp7LIHNMCgPduYK_lcTDpAO0cQ")
+				queryParam("key", "** Google key here **")
 				.body(placeAdd).
 
 				when().post("/maps/api/place/add/json").then().assertThat()
@@ -47,7 +47,7 @@ public class basics2 {
 		
 		//Task-3 place this place_id in the Delete request
 		given().
-		queryParam("key", "AIzaSyASwmtPUPp7LIHNMCgPduYK_lcTDpAO0cQ").
+		queryParam("key", "** Google key here **").
 		body("{"+
   "\"place_id\": \""+placeid+"\""+
 "}").
